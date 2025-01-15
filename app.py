@@ -6,7 +6,7 @@ import random
 app = Flask(__name__)
 CORS(app, support_credentials=True)
 
-@app.route("/getTemperatureFromFrontEnd", methods=["POST", "OPTIONS"])
+@app.route("/write_data", methods=["POST", "OPTIONS"])
 @cross_origin(supports_credentials=True)
 def getTemperature():
     try:
